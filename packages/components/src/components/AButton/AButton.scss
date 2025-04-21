@@ -1,0 +1,77 @@
+// base
+.andi-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  //   size
+  &--sm {
+    height: 32px;
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+  &--md {
+    height: 40px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  &--lg {
+    height: 48px;
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  //   variant
+  &--primary {
+    background-color: var(--andi-primary-color);
+    color: #fff;
+    border: 1px solid var(--andi-primary-color);
+
+    &:hover {
+      background-color: var(--andi-primary-hover-color);
+      border: 1px solid var(--andi-primary-hover-color);
+    }
+    &:active {
+      background-color: var(--andi-primary-active-color);
+      border: 1px solid var(--andi-primary-active-color);
+    }
+    &:disabled {
+      background-color: var(--andi-primary-active-color);
+      border: 1px solid var(--andi-primary-active-color);
+      cursor: not-allowed;
+    }
+  }
+  &--outline {
+    background-color: transparent;
+    color: var(--andi-primary-color);
+    border: 1px solid var(--andi-primary-color);
+
+    &:hover {
+      background-color: var(--andi-blue-10);
+      border: 1px solid var(--andi-blue-10);
+    }
+    &:active {
+      background-color: var(--andi-blue-10);
+      border: 1px solid var(--andi-blue-10);
+    }
+    &:disabled {
+      background-color: transparent;
+      border: 1px solid var(--andi-primary-active-color);
+      cursor: not-allowed;
+    }
+  }
+
+  //   rounded
+  &--rounded-sm {
+    border-radius: 4px;
+  }
+  &--rounded-md {
+    border-radius: 8px;
+  }
+  &--rounded-lg {
+    border-radius: 16px;
+  }
+}

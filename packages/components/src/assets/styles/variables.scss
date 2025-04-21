@@ -1,0 +1,20 @@
+:root {
+  --andi-primary-color: #006ce1;
+  --andi-primary-hover-color: #0051a8;
+  --andi-primary-active-color: #004494;
+  --andi-secondary-color: #c2a875;
+  --andi-secondary-hover-color: #b19a5f;
+  --andi-secondary-active-color: #a58b4f;
+  --andi-blue-10: #e6f0ff;
+}
+
+// dark mode
+[data-theme='dark'] {
+  --andi-primary-color: #006ce1;
+  --andi-primary-hover-color: #0051a8;
+  --andi-primary-active-color: #004494;
+  --andi-secondary-color: #c2a875;
+  --andi-secondary-hover-color: #b19a5f;
+  --andi-secondary-active-color: #a58b4f;
+  --andi-blue-10: #e6f0ff;
+}
