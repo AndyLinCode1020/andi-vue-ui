@@ -39,8 +39,8 @@
       border: 1px solid var(--andi-primary-active-color);
     }
     &:disabled {
-      background-color: var(--andi-primary-active-color);
-      border: 1px solid var(--andi-primary-active-color);
+      background-color: var(--andi-disabled-color);
+      border: 1px solid var(--andi-disabled-color);
       cursor: not-allowed;
     }
   }
@@ -59,7 +59,7 @@
     }
     &:disabled {
       background-color: transparent;
-      border: 1px solid var(--andi-primary-active-color);
+      border: 1px solid var(--andi-disabled-color);
       cursor: not-allowed;
     }
   }
@@ -73,5 +73,57 @@
   }
   &--rounded-lg {
     border-radius: 16px;
+  }
+
+  &.andi-button--custom {
+    transition: all 0.2s ease;
+    background-color: var(--andi-custom--button-bg, var(--andi-primary-color, #000)) !important;
+    color: var(--andi-custom--button-text, #fff) !important;
+    border-color: var(--andi-custom--button-border, var(--andi-primary-color, #000)) !important;
+
+    // hover 狀態
+    &:hover {
+      background-color: var(
+        --andi-custom-button-bg-hover-color,
+        var(--andi-primary-hover-color)
+      ) !important;
+      color: var(
+        --andi-custom-button-text-hover-color,
+        var(--andi-custom--button-text, #fff)
+      ) !important;
+      border-color: var(
+        --andi-custom-button-border-hover-color,
+        var(--andi-custom--button-border, var(--andi-primary-color, #000))
+      ) !important;
+    }
+
+    // active 狀態
+    &:active {
+      background-color: var(
+        --andi-custom-button-bg-active-color,
+        var(--andi-custom--button-bg, #004494)
+      ) !important;
+      color: var(
+        --andi-custom-button-text-active-color,
+        var(--andi-custom--button-text, #fff)
+      ) !important;
+      border-color: var(
+        --andi-custom-button-border-active-color,
+        var(--andi-custom--button-border, #004494)
+      ) !important;
+    }
+
+    // disabled 狀態
+    &:disabled {
+      background-color: var(
+        --andi-custom--button-disabled-bg,
+        var(--andi-disabled-color, #b3b3b3)
+      ) !important;
+      color: var(--andi-custom--button-disabled-text, #fff) !important;
+      border-color: var(
+        --andi-custom--button-disabled-border,
+        var(--andi-disabled-color, #b3b3b3)
+      ) !important;
+    }
   }
 }
