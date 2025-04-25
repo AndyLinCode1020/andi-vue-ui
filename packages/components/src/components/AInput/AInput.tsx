@@ -4,7 +4,7 @@ import { computed, defineComponent, ref, watch } from 'vue';
 import './AInput.scss';
 
 type Size = 'sm' | 'md' | 'lg';
-
+// TODO Add error state & error message
 export const AInput = defineComponent({
   name: 'AInput',
   props: {
